@@ -37,6 +37,11 @@ main {
   text-align: center;
   padding: 20px;
   border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+}
+
+.category:hover {
+  background-color: #444; /* Change background color on hover */
 }
 
 .category h2 {
