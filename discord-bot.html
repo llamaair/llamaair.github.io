@@ -18,12 +18,18 @@
 
   <main>
     <div class="grid-container">
-      <a class="category" href=href="mailto:marcusolsson123@hotmail.com?subject=Discord%20Bot%20Request&body=Bot%20request%20goes%20here">
-        <h2>Send request</h2>
-        <p>Click to send a request about discord bot development.</p>
-      </a>
+      <form action="mailto:marcusolsson123@hotmail.com" method="GET">
+        <input type="hidden" name="subject" value="Discord Bot Request">
+        <input type="hidden" name="body" value="Bot request goes here">
+        <a class="category" href="#">
+          <h2>Send request</h2>
+          <p>Click to send a request about discord bot development.</p>
+          <button type="submit">Send Email</button>
+        </a>
+      </form>
     </div>
   </main>
+  
 
   <footer>
     <p>&copy; 2023 Llamaair. All rights reserved.</p>
