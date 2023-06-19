@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Llamaair - Programming and PC Services</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Redirect Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Llamaair</h1>
-  </header>
+  <div class="container">
+    <h1>Redirect Website</h1>
+    <form id="redirectForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
 
-  <main2>
-    <div class="main-desc">
-        <h2>Hi! I'm Llamaair</h2>
-        <p>I offer services such as development of discord bots, software, games and also PC Repairs and PC Building for cheap prices.</p>
-      </div>
-  </main2>
+      <label for="code">Code:</label>
+      <input type="text" id="code" name="code" required>
 
-  <main>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
-    <div class="grid-container">
-      <a class="category" href="discord-bot.html">
-        <h2>Discord Bot Programming</h2>
-        <p>Development of discord bots.</p>
-      </a>
+  <script>
+    document.getElementById('redirectForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
 
-      <a class="category" href="software-development.html">
-        <h2>Software Development</h2>
-        <p>Development of software and websites.</p>
-      </a>
+      var usernameInput = document.getElementById('username').value;
+      var codeInput = document.getElementById('code').value;
 
-      <a class="category" href="game-development.html">
-        <h2>Game Development</h2>
-        <p>Insert your content about Game Development here.</p>
-      </a>
-
-      <a class="category" href="pc-repairs.html">
-        <h2>PC Repairs</h2>
-        <p>Insert your content about PC Repairs here.</p>
-      </a>
-
-      <a class="category" href="pc-building.html">
-        <h2>PC Building</h2>
-        <p>Insert your content about PC Building here.</p>
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Llamaair. All rights reserved.</p>
-  </footer>
+      if (usernameInput === 'roykela') {
+        if (codeInput === '2167') {
+          window.location.href = '1';
+        } else if (codeInput === '8525') {
+          window.location.href = '2';
+        }
+      }
+    });
+  </script>
 </body>
 </html>
